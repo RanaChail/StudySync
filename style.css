@@ -23,7 +23,7 @@ body{
     height: 100vh;
     text-align: center;
     background-color: var(--background-color);
-    padding: 0.1rem;
+    padding: 0.1rem 0.3rem;
 }
 
 .header-content{
@@ -272,7 +272,7 @@ body{
     border: none;
     border-radius: 0.625rem;
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 780px) {
@@ -308,4 +308,120 @@ body{
     font-size: 1rem;
     color: var(--dark-gray);
     font-weight: 600;
+}
+
+/*------------------------------ Feature Section -----------------------*/
+.feature-container{
+    background-color: var(--light-gray);
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.feature-content{
+    max-width: 800px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-info h2{
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.main-info p{
+    color: var(--gray);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 0.2rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 85, 118);
+    padding: 2rem;
+    border-radius: 0.7rem;
+    gap: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.feature-card:hover{
+    transform: scale(1.05);
+}
+
+.icon-container{
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--background-color);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.feature-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.feature-title{
+    color: var(--background-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.feature-description{
+    color: var(--background-color);
+    font-size: 0.95rem;
+}
+
+.feature-card:nth-child(1){
+    background-color: #4a90e2;
+}
+.feature-card:nth-child(2){
+    background-color: #ff6289;
+}
+.feature-card:nth-child(3){
+    background-color: #fcc76d;
+}
+.feature-card:nth-child(4){
+    background-color: #44bfc3;
+}
+.feature-card:nth-child(5){
+    background-color: #32c328;
+}
+.feature-card:nth-child(6){
+    background-color: #7d78b1;
 }
