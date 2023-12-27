@@ -501,3 +501,137 @@ body{
 .testimonial-details p{
     font-size: 0.7rem;
 }
+
+
+/*--------------------------- NewsLetter Section -------------------------*/
+.newsletter-container{
+    max-width: 1000px;
+    padding: 2rem;
+    background-color: var(--background-color);
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.newsletter-content{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--light-gray);
+    height: 100%;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.news-left{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+
+.news-left img{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 678px) {
+    .news-left{
+        display: none;
+    }
+}
+
+.news-info{
+    padding-left: 3rem;
+}
+
+.news-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.news-desc{
+    text-align: left;
+    color: var(--dark-gray);
+}
+
+.news-form{
+    display: flex;
+    padding: 0 3rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.news-email{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+}
+
+.news-email:focus{
+    border-color: var(--link-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news-send-button{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.news-send-button:hover{
+    background-color: #2563eb;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.privacy-policy{
+    text-align: left;
+    font-size: 0.75rem;
+    padding: 0 3rem;
+    color: var(--dark-gray);
+}
+
+.news-link{
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+@media screen and (max-width: 450px) {
+    .news-title{
+        font-size: 1.5rem;
+    }
+    .news-desc{
+        text-align: center;
+    }
+    .news-info{
+        padding: 0.5rem;
+    }
+    .news-form{
+        padding: 0.5rem;
+        justify-content: center;
+    }
+    .news-right{
+        gap: 0;
+    }
+    .privacy-policy{
+        padding: 0.5rem;
+    }
+}
