@@ -635,3 +635,162 @@ body{
         padding: 0.5rem;
     }
 }
+
+
+/*----------------------------- Footer Section --------------------------*/
+.footer-container{
+    background-color: var(--background-color);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.footer{
+    max-width: 100%;
+    padding: 1.2rem 2.2rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-top{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.65rem;
+}
+
+.logo-svg{
+    width: 1.6rem;
+    height: 5.8rem;
+}
+
+.logo-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: -1.8rem;
+    color: var(--text-color);
+}
+
+.company-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.filler-text{
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.socials{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer-grid{
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    padding-top: 2.2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.footer-grid-heading{
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+}
+
+.footer-link{
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.footer-link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-copyright{
+    font-size: 0.75rem;
+    color: var(--gray);
+    border-top: 1px solid rgb(167, 167, 167);
+    padding-bottom: 1.8rem;
+    padding-top: 1.1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer-grid{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-grid{
+        justify-content: space-evenly;
+        grid-gap: 1rem;
+    }
+    .footer{
+        padding: 0.5rem;
+    }
+    .logo-link{
+        margin-bottom: -1rem;
+    }
+    .logo-svg{
+        height: 2.6rem;
+    }
+    .company-logo{
+        justify-content: center;
+    }
+    .filler-text{
+        text-align: center;
+    }
+    .socials{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-grid{
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+    .socials{
+        gap: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer-link-list{
+        gap: 0.8rem;
+    }
+    .socials{
+        gap: 2rem;
+    }
+}
+
+/* The End of This StudySync Project: Thank You */
